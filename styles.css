@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 400px;
+    background-repeat: no-repeat;
+    margin: 100px auto;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-transform:uppercase;
+    border-radius: 6px;
+
+}
+
+.content {
+    margin-top: 20px auto;
+    
+}
+
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color:#C0C0C0;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.payment-Heading {
+    color:#212727;
+}
+
+
+.card-types {
+    border-top: 1px solid grey;
+    display: flex;
+    align-items: center;   
+    padding: 8px;
+  
+}
+
+.cards-cover {
+    display: flex;
+    align-items: center; 
+    flex-grow: 1;
+    
+}
+.cards-cover::after {
+    content: "";
+    background-image: url(./img/check.svg);
+    width: 0;
+    height: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cards:checked + .cards-cover::after {
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: auto;
+}
+
+
+.cards:checked +.cards-cover
+{
+    font-weight: bold;
+
+}
+
+
+.card-imgs {
+ margin: 0 20px;
+}
+.cards {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+    
+}
+
+
+.button {
+    background-color:#598BDD ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 18px;
+    font-size: 14px;
+    text-decoration: none;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.button::after {
+    background-image: url(./img/arrow.svg);
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+}
+
+.button:hover {
+    background-color:#4087fa ;
+}
+
+button:active {
+    transform: translateY(2px);
+    padding: 18px;
+    outline: hidden;
+}

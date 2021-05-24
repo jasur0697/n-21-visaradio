@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="container">
+      <div class="content">
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <h2 class="Payment-Heading">Payment method</h2>
+          
+        <form class="payment-form" action="#" method="POST"> 
+
+        <label class="card-types border" for="visa">
+       
+          <input class="cards visa" type="radio" name="payment-cards" id="visa">
+
+          <div class="cards-cover">
+            <img class="card-imgs" src="./img/visa.svg" width="50px" height="50px"
+            alt="visa card"> <span>Visa</span>
+            </div>
+  
+        </label>
+
+        <label class="card-types border" for="mastercard">
+          
+          <input class="cards mastercard" type="radio" name="payment-cards" id="mastercard">
+
+          <div class="cards-cover">
+          <img class="card-imgs" src="./img/mastercard.svg" width="50px" height="50px" alt=""> <span>Mastercard</span> 
+          </div>
+        
+        </label>
+
+        <label class="card-types border" for="maestro">
+          <input class="cards maestro" type="radio" name="payment-cards" id="maestro">
+          
+          <div class="cards-cover">
+          <img class="card-imgs" src="./img/maestro.svg" width="50px" height="50px" alt=""> <span>MAESTRO</span> 
+        </div>
+         
+        </label>
+        </form>
+      
+      </div>
+      <button class="button" href="#">Next Step</button>
+    </div>
+</body>
+</html>
